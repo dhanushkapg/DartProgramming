@@ -1,0 +1,131 @@
+//import 'dart:html';
+  enum status {
+    
+    pass,
+    fail,
+    absent,
+    notregisted
+    
+    
+  }
+void main() {
+  Map<int, String> a = new Map<int, String>(); //Using Map contructor
+  a[1] = 'test1';
+  a[2] = 'test2';
+  a[3] = 'test3';
+  a[4] = 'test4';
+  print(a);
+  // print(a[1]);
+  // print(a[2]);
+  // print(a[3]);
+  // print(a[4]);
+  for (int item2 in a.keys) {
+    print('items are');
+    print(item2);
+  }
+
+  var gifts = {
+    //Using Map object
+    // Key:    Value
+    'first': 'partridge',
+    'second': 'turtledoves',
+    'fifth': 'golden rings'
+  };
+
+  print(gifts['first']);
+
+  var myList = ['a', 'b', 'c'];
+  print(myList[1]);
+
+  print('items on MyList');
+  for (String item3 in myList) {
+    print(item3);
+  }
+
+  print(a.length); //print Map Length
+
+  print(' create map using daymic data type ');
+
+  Map<String, dynamic> b = new Map<String, dynamic>();
+  b['First'] = 1;
+  b['Second'] = 2;
+  b['Third'] = '3';
+
+  for (dynamic item in b.values) {
+    print(item);
+  }
+  print('indivigual Value Access');
+  print(b['First']);
+
+  //List<String> myNewList = new List<String>();
+  // myNewList[0] = 'test1';
+  // myNewList[1] = 'test2';
+  // myNewList[2] = 'test3';
+  // myNewList[3] = 'test4';
+  //for (String getItem in myNewList) {
+  // print(getItem);
+  //}
+
+  print('Map with dynamic key and dynamic Value');
+
+  Map<dynamic, dynamic> newMap = new Map<dynamic, dynamic>();
+  newMap[1] = 'Dhanushka';
+  newMap['age'] = [30, '40', 50, 60, 70, 50];
+  newMap['salary'] = myList;
+  newMap['isComplete'] = true;
+  newMap[2] = 'Married';
+  newMap['status']=status.values;
+
+  for (dynamic items1 in newMap.keys) {
+    print(items1.toString() + ":" + newMap[items1].toString());
+  }
+  if (newMap[1] == 'Dhanushka') {
+    print('yes');
+  } else {
+    print('no');
+  }
+
+  print(newMap['salary']);
+  if (newMap['salary'][1] == 'b') {
+    print('yes its b');
+  }
+
+  print(newMap['age']);
+
+  print(newMap['age'][1]);
+
+  for (dynamic item in newMap['age']) {
+    switch (item) {
+      case 30:
+        {
+          print('i am 30');
+          break;
+        }
+
+      case '40':
+        {
+          print('i am 40');
+          break;
+        }
+
+      case 50:
+        {
+          print('i am 50');
+          break;
+        }
+
+      default:
+        {
+          print('My age is not listed above');
+        }
+    }
+  }
+  
+
+ print (newMap['status']);
+ print(status.values);
+  
+ 
+  
+  
+}

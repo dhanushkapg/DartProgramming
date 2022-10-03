@@ -1,0 +1,59 @@
+//import 'dart:html';
+
+void main() {
+ var myList=['d','a'];
+ var myList2=[];//intiliaze empty list
+// myList=;
+ print(myList); 
+ print(myList.runtimeType); //print Data type of the variable 
+ myList.add('b');  //add item to the list
+ myList.add('e');  //add item to the list
+ myList2.addAll(myList); // transfer all values of MyList to MyList2 List
+ print(myList);
+ print('-----------');
+ myList.removeLast(); //remove last item from the my list 
+ for(String item in myList)  //print each item in the mylist 
+ {
+   print(item);
+ }
+print('--------------');
+ for(int i=0;i<myList.length;i++)  //iterate through the for each and print values
+ {
+   print(myList[i]);
+ }
+
+print('--------------');
+for(String item1 in myList2)
+  {
+  print(item1);
+  }
+}//import 'dart:html';
+
+void main() {
+ var myList=['d','a'];
+ var myList2=[];//intiliaze empty list
+// myList=;
+ print(myList); 
+ print(myList.runtimeType); //print Data type of the variable 
+ myList.add('b');  //add item to the list
+ myList.add('e');  //add item to the list
+ myList2.addAll(myList); // transfer all values of MyList to MyList2 List
+ print(myList);
+ print('-----------');
+ myList.removeLast(); //remove last item from the my list 
+ for(String item in myList)  //print each item in the mylist 
+ {
+   print(item);
+ }
+print('--------------');
+ for(int i=0;i<myList.length;i++)  //iterate through the for each and print values
+ {
+   print(myList[i]);
+ }
+
+print('--------------');
+for(String item1 in myList2)
+  {
+  print(item1);
+  }
+}
