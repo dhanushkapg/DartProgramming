@@ -1,0 +1,21 @@
+void main() {
+  newUser obj1=new newUser();
+  //newObj.age=10;
+  obj1.setAge();
+  }
+
+class user{
+  int age=33;
+  String name='Dhanushka';
+  bool status=true;
+  
+  setAge()
+  {
+    print(age);
+   
+{
+  
+  
+  setAge();
+}
+
